@@ -3,3 +3,13 @@ Console.WriteLine("Пожалуйста, введите размер вашег�
 int lenghtArray = int.Parse(Console.ReadLine());
 
 
+string[] Array(int lengthArray)
+{
+    string[] array = new string[lengthArray];
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.WriteLine("Введите ваше слово (число): ");
+        array[i] = Console.ReadLine();
+    }
+    return array;
+}
