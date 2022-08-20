@@ -22,3 +22,24 @@ void PrintArr(string[] array)
         else Console.Write(array[i] + "]");
     }
 }
+
+string[] ArrayOfThreeSymbol(string[] array)
+{
+    string[] resultArray = new string[array.Length];
+    int size = 3;
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= size) resultArray[count] = array[i];
+        count++;      
+    }
+    return resultArray;
+
+}
+
+
+string[] arr = Array(lenghtArray);
+PrintArr(arr);
+Console.WriteLine();
+string[] newArr = ArrayOfThreeSymbol(arr);
+PrintArr(newArr);
